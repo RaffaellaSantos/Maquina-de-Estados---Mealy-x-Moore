@@ -46,10 +46,9 @@ Existem dois tipos principais de máquinas de estados:
    - Dê duplo clique para abrir no **Quartus Prime 20.1**.
 
 2. **Simular o circuito**
-   - Vá até a aba `Simulation` > `RTL Simulation`.
    - Use o arquivo de waveform `.vwf` para executar a simulação:
      - Exemplo: `mealy_testbench.vwf`
-     - Ele já contém a configuração de entrada (`x`, `clk`, `reset`) e a saída esperada (`z`).
+     - Ele já contém a configuração de entrada (`x`, `clk`, `reset`) e a saída esperada (`y`).
    - Clique em **Run Simulation**.
 
 3. **Verificar resultados**
@@ -57,4 +56,4 @@ Existem dois tipos principais de máquinas de estados:
 
 ## ✅ Resultado esperado
 
-A saída `z` deve ser igual a `1` **somente uma vez**, **imediatamente após** a primeira ocorrência de `0` **seguida de três ou mais `1`s consecutivos**.
+A saída `y` deve ser igual a `1` **somente uma vez**, **imediatamente após** a primeira ocorrência de `0` **seguida de três ou mais `1`s consecutivos**.
