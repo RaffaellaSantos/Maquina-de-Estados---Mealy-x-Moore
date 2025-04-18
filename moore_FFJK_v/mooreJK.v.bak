@@ -1,0 +1,59 @@
+module mooreJK (
+  input x, clk, rst,
+  output reg y
+);
+
+  reg Q2, Q1, Q0; // bits do estado
+  wire J2, K2, J1, K1, J0, K0;
+
+  wire [2:0] state = {Q2, Q1, Q0};
+
+  // Codificação dos estados
+  parameter a = 3'b000,
+            b = 3'b001,
+            c = 3'b010,
+            d = 3'b011,
+            e = 3'b100;
+
+  // Lógica de saída Moore
+  always @(*) begin
+    case (state)
+      e: y = 1;
+      default: y = 0;
+    endcase
+  end
+
+  // Equações J e K para transições (obtidas com mapa de Karnaugh ou tabela de excitação)
+  assign J2 = (~Q2 & Q1 & Q0 & ~x);         // ativa em d->e
+  assign K2 = Q2 & (~Q1) & (~Q0);           // ativa em e->a
+
+  assign J1 = (~Q2 & ~Q1 & Q0 & x);         // ativa em b->c
+  assign K1 = (~Q2 & Q1 & ~x);              // ativa em c->a ou d->e
+
+  assign J0 = (~Q0 & x) | (~Q2 & x);        // ativa em a->b ou e->b
+  assign K0 = Q0 & (~x);                    // ativa em b->a ou d->e
+
+  // Instanciando os FF JK
+  jk_ff ff2 (.j(J2), .k(K2), .clk(clk), .rst(rst), .q(Q2));
+  jk_ff ff1 (.j(J1), .k(K1), .clk(clk), .rst(rst), .q(Q1));
+  jk_ff ff0 (.j(J0), .k(K0), .clk(clk), .rst(rst), .q(Q0));
+
+endmodule
+
+// Módulo do flip-flop JK
+module jk_ff (
+  input j, k, clk, rst,
+  output reg q
+);
+  always @(posedge clk or posedge rst) begin
+    if (rst) q <= 1'b0;
+    else begin
+      case ({j, k})
+        2'b00: q <= q;
+        2'b01: q <= 1'b0;
+        2'b10: q <= 1'b1;
+        2'b11: q <= ~q;
+      endcase
+    end
+  end
+endmodule
