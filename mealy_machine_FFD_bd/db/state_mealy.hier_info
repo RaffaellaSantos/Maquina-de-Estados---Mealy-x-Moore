@@ -1,0 +1,9 @@
+|state_mealy
+z <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst10.IN0
+x => inst5.IN0
+x => inst4.IN0
+x => inst3.IN1
+x => inst8.IN0
+
+

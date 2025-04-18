@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_machine_FFD_bd/state_mealy.bdf
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_machine_FFD_bd/wavestate.vwf
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_machine_FFD_bd/Waveform_not.vwf
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_machine_FFD_bd/db/state_mealy.cbx.xml
+design_name = state_mealy
+instance = comp, \z~output , z~output, state_mealy, 1
+instance = comp, \clk~input , clk~input, state_mealy, 1
+instance = comp, \clk~inputCLKENA0 , clk~inputCLKENA0, state_mealy, 1
+instance = comp, \x~input , x~input, state_mealy, 1
+instance = comp, \inst6~0 , inst6~0, state_mealy, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, state_mealy, 1

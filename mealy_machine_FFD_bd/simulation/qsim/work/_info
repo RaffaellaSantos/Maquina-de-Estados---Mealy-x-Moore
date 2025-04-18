@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/ProjetosQuartus/SD2/mealy_machine/simulation/qsim
+vstate_mealy
+Z0 !s110 1744997966
+!i10b 1
+!s100 N2@Vh5F^`[6cz_4n@Go=Y1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I78XKd_S]Ci[8:HDMd4@HQ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/ProjetosQuartus/SD2/mealy_machine_FFD_bd/simulation/qsim
+w1744997965
+8state_mealy.vo
+Fstate_mealy.vo
+!i122 24
+L0 32 222
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1744997966.000000
+!s107 state_mealy.vo|
+!s90 -work|work|state_mealy.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vstate_mealy_vlg_vec_tst
+R0
+!i10b 1
+!s100 <mFV3QOYPbX1_TgA`kh@A2
+R1
+IjA212:C?2[WJ4k_2_jKgK0
+R2
+R3
+w1744997963
+8Waveform_not.vwf.vt
+FWaveform_not.vwf.vt
+!i122 25
+L0 30 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform_not.vwf.vt|
+!s90 -work|work|Waveform_not.vwf.vt|
+!i113 1
+R6
+R7
