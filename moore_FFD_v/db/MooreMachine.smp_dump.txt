@@ -1,0 +1,8 @@
+
+State Machine - |MooreMachine|state
+Name state.d state.c state.b state.a state.e 
+state.a 0 0 0 0 0 
+state.b 0 0 1 1 0 
+state.c 0 1 0 1 0 
+state.d 1 0 0 1 0 
+state.e 0 0 0 1 1 

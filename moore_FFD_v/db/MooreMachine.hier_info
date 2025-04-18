@@ -1,0 +1,11 @@
+|MooreMachine
+x => state.DATAB
+x => Selector2.IN1
+x => Selector1.IN2
+x => Selector0.IN1
+x => state.DATAB
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
