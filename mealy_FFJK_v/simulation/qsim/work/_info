@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ProjetosQuartus/SD2/mealy_FFJK_v/simulation/qsim
+vmealy_FFJK
+Z1 !s110 1745010955
+!i10b 1
+!s100 W7PR0ikA5RiV?<TM8HKTE0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^TNW00:IC=?eZ60NmoYOR3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1745010954
+8mealy_FFJK.vo
+Fmealy_FFJK.vo
+!i122 12
+L0 32 237
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1745010955.000000
+!s107 mealy_FFJK.vo|
+!s90 -work|work|mealy_FFJK.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+nmealy_@f@f@j@k
+vmealy_FFJK_vlg_vec_tst
+R1
+!i10b 1
+!s100 FjK=S>JCWCmUZQdeETSJL3
+R2
+IIonnQUm[iFnP_dVmd?4o82
+R3
+R0
+w1745010953
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 13
+L0 30 50
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+nmealy_@f@f@j@k_vlg_vec_tst

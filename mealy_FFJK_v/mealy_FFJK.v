@@ -1,0 +1,23 @@
+module mealy_FFJK(
+	input x, clk, rst,
+	output reg y
+);
+
+	wire Q1, Q0;
+	wire J1, K1, J0, K0;
+	
+	wire [1:0] state = {Q1, Q0};
+	
+	always @(*) begin		
+		y = (Q1 & Q0 & ~x);
+	end
+	
+	assign J1 = Q0 & x;
+	assign K1 = ~x;
+	assign J0 = x;
+	assign K0 = ~x | ~Q1;
+	
+	// Flip-Flops JK  
+  jk_ff ff1 (.j(J1), .k(K1), .clk(clk), .rst(rst), .q(Q1));
+  jk_ff ff0 (.j(J0), .k(K0), .clk(clk), .rst(rst), .q(Q0));
+endmodule

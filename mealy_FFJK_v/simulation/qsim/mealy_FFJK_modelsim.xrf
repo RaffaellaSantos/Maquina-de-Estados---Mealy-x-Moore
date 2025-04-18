@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_FFJK_v/jk_ff.v
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_FFJK_v/mealy_FFJK.v
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_FFJK_v/Waveform.vwf
+source_file = 1, C:/ProjetosQuartus/SD2/mealy_FFJK_v/db/mealy_FFJK.cbx.xml
+design_name = mealy_FFJK
+instance = comp, \y~output , y~output, mealy_FFJK, 1
+instance = comp, \clk~input , clk~input, mealy_FFJK, 1
+instance = comp, \clk~inputCLKENA0 , clk~inputCLKENA0, mealy_FFJK, 1
+instance = comp, \x~input , x~input, mealy_FFJK, 1
+instance = comp, \ff1|Mux0~0 , ff1|Mux0~0, mealy_FFJK, 1
+instance = comp, \rst~input , rst~input, mealy_FFJK, 1
+instance = comp, \ff1|q , ff1|q, mealy_FFJK, 1
+instance = comp, \ff0|Mux0~0 , ff0|Mux0~0, mealy_FFJK, 1
+instance = comp, \ff0|q , ff0|q, mealy_FFJK, 1
+instance = comp, \y~0 , y~0, mealy_FFJK, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mealy_FFJK, 1
