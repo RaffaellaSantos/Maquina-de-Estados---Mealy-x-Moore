@@ -24,6 +24,7 @@ Existem dois tipos principais de máquinas de estados:
 │   ├── moore_FFD_v                 → Código Verilog da Moore com Flip-Flop D
 │   ├── moore_FFJK_v                → Código Verilog da Moore com Flip-Flop JK
 ├── README.md                       → Este arquivo
+├── Relatorio_Maquina_de_Estados.pdf → Relatório completo dos diagramas de estado e tempo
 ```
 
 ## 📁 Explicação dos Arquivos
