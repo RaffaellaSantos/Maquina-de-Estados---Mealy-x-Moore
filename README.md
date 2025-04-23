@@ -4,7 +4,7 @@ Este repositório contém projetos completos de circuitos sequenciais síncronos
 
 ## 🔍 O que é uma Máquina de Estados?
 
-Uma **máquina de estados finitos (FSM)** é um modelo de comportamento usado para representar sistemas digitais sequenciais. Ela muda de estado com base nas entradas e em seu estado atual, e é amplamente usada em controle de sistemas, protocolos digitais e lógica sequencial.
+Uma **máquina de estados finitos (FSM)** é um modelo de comportamento usado para representar sistemas digitais sequenciais. Ela muda de estado com base nas entradas e/ou em seu estado atual, e é amplamente usada em controle de sistemas, protocolos digitais e lógica sequencial.
 
 Existem dois tipos principais de máquinas de estados:
 
@@ -52,7 +52,7 @@ Existem dois tipos principais de máquinas de estados:
    - Clique em **Run Simulation**.
 
 3. **Verificar resultados**
-   - Confirme se a saída `z` está sendo acionada corretamente após detectar o primeiro `0` após três `1`s consecutivos.
+   - Confirme se a saída `y` está sendo acionada corretamente após detectar o primeiro `0` após três `1`s consecutivos.
 
 ## ✅ Resultado esperado
 
